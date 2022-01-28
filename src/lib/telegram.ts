@@ -79,7 +79,7 @@ export async function useWebhook(req: NowRequest, res: NowResponse) {
 				params.append("text",content);
 
 				const ret = await axios.post( "https://api.telegram.org/bot" + BOT_TOKEN + "/sendMessage" , params );
-				res.status(200).json('Ok');
+				res.status(200).json('ok');
 			}
 		}
 		
